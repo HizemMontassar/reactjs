@@ -56,9 +56,6 @@ class Main extends Component {
       
       <div>
         <Header />
-        {/* <Menu dishes={this.state.dishes}
-        onClick={ (dishId) => this.onDishSelect(dishId) } />
-        <Dishdetail dish={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish)[0]} ></Dishdetail> */}
         <Switch>
           <Route path="/home" component={HomePage} />
           <Route exact path="/menu" component={() => <Menu dishes={this.state.dishes} />} />
